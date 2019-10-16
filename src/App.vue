@@ -15,6 +15,7 @@ export default {
 
 <style lang="scss">
 @import './assets/css/reset.css';
+@import './assets/css/element-variables.scss';
 @import '~@/assets/css/theme.scss';
 </style>
 
