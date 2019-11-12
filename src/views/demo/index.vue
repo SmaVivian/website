@@ -13,7 +13,30 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {}
+  },
+  methods: {
+    getData() {
+      this.$http.get('/login/getRoleFunction', {}).then(
+        res => {
+          if (res.success) {
+            console.log(res.result)
+          } else {
+            this.$message.error(res.message)
+          }
+        },
+        error => {
+          this.$message.error(error.msg || '服务器异常')
+        }
+      )
+    }
+  },
+  created() {
+    this.getData()
+  }
+}
 </script>
 
 <style lang="scss" scoped>
