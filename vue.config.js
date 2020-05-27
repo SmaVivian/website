@@ -29,9 +29,23 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('@assets', resolve('src/assets'))
-      .set('@images', resolve('src/images'))
+      .set('@images', resolve('src/assets/images'))
       .set('@cmp', resolve('src/components'))
       .set('@views', resolve('src/views'))
+    // config.module
+    //   .rule('svg')
+    //   .exclude.add(resolve('src/icons'))
+    //   .end()
+    // config.module
+    //   .rule('icons')
+    //   .test(/\.svg$/)
+    //   .include.add(resolve('src/icons'))
+    //   .end()
+    //   .use('svg-sprite-loader')
+    //   .loader('svg-sprite-loader')
+    //   .options({
+    //     symbolId: 'icon-[name]'
+    //   })
   },
   css: {
     loaderOptions: {
@@ -40,7 +54,9 @@ module.exports = {
           @import "@/assets/css/mixin.scss";
         `
       }
-    }
+    },
+    // 开启 CSS source maps?
+    sourceMap: true
   },
   devServer: {
     port: 8080,
@@ -53,6 +69,8 @@ module.exports = {
       }
     }
   },
+  // 生产环境是否生成 sourceMap 文件
+  // productionSourceMap: true,
 
   lintOnSave: undefined
 }
