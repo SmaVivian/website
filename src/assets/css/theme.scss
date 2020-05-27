@@ -15,6 +15,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
 // IE不兼容
 .two-ell {
   overflow: hidden;
@@ -123,8 +124,13 @@
 .g-container {
   position: relative;
   min-width: $minWidth;
-  min-height: 100%;
-  padding-top: $headerHeight;
-  box-sizing: border-box;
-  background-color: #f2f3f8;
+  // min-height: 100%;
+  // padding-top: $headerHeight;
+  // box-sizing: border-box;
+  // background-color: #f2f3f8;
+}
+
+.g-main {
+  width: $minWidth;
+  margin: 0 auto;
 }
