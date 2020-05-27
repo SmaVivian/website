@@ -64,6 +64,83 @@ export const constantRouterMap = [
         name: 'home',
         component: () => import('@/views/home'),
         meta: { title: '首页', menuLevel: 1, rank: 1 }
+      },
+      // 产品-博物馆大数据平台
+      {
+        path: '/product/data',
+        name: '/productData',
+        component: () => import('@/views/product/data'),
+        meta: { title: '产品' }
+      },
+      // 产品-协同平台
+      {
+        path: '/product/oa',
+        name: '/productOa',
+        component: () => import('@/views/product/oa'),
+        meta: { title: '产品' }
+      },
+      // 产品-gis数据管理平台
+      {
+        path: '/product/gis',
+        name: '/productGis',
+        component: () => import('@/views/product/gis'),
+        meta: { title: '产品' }
+      },
+      // 产品-在线虚拟博物馆
+      {
+        path: '/product/virtual',
+        name: '/productVirtual',
+        component: () => import('@/views/product/virtual'),
+        meta: { title: '产品' }
+      },
+      // 产品-三维数据采集
+      {
+        path: '/product/collect',
+        name: '/productCollect',
+        component: () => import('@/views/product/collect'),
+        meta: { title: '产品' }
+      },
+      // 解决方案-文物局
+      {
+        path: '/solution/cutural',
+        name: 'solutionCutural',
+        component: () => import('@/views/solution/cutural'),
+        meta: { title: '解决方案' }
+      },
+      // 解决方案-博物馆
+      {
+        path: '/solution/museum',
+        name: '/solutionMuseum',
+        component: () => import('@/views/solution/museum'),
+        meta: { title: '解决方案' }
+      },
+      // 解决方案-文保单位
+      {
+        path: '/solution/relic-unit',
+        name: '/solutionRelicUnit',
+        component: () => import('@/views/solution/relic-unit'),
+        meta: { title: '解决方案' }
+      },
+      // 案例
+      {
+        path: '/case',
+        name: '/case',
+        component: () => import('@/views/case/index'),
+        meta: { title: '案例' }
+      },
+      // 案例详情
+      {
+        path: '/case/detail',
+        name: '/caseDetail',
+        component: () => import('@/views/case/detail'),
+        meta: { title: '案例详情' }
+      },
+      // 关于我们
+      {
+        path: '/about',
+        name: '/about',
+        component: () => import('@/views/about/index'),
+        meta: { title: '关于我们' }
       }
     ]
   }
