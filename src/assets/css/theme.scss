@@ -125,7 +125,7 @@
   position: relative;
   min-width: $minWidth;
   // min-height: 100%;
-  // padding-top: $headerHeight;
+  padding-top: $headerHeight;
   // box-sizing: border-box;
   // background-color: #f2f3f8;
 }
@@ -133,4 +133,15 @@
 .g-main {
   width: $minWidth;
   margin: 0 auto;
+}
+
+.g-title-box {
+  color: $colorMain;
+  font-size: $fontMain;
+
+  h1 {
+    color: $colorTitle;
+    font-size: $fontTitleMax;
+    font-weight: bold;
+  }
 }

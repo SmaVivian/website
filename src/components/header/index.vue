@@ -12,6 +12,7 @@
         @select="handleSelect"
         :router="router"
       >
+        <el-menu-item index="/home">首页</el-menu-item>
         <el-submenu index="2">
           <template slot="title">产品</template>
           <el-submenu index="2-1">
@@ -90,7 +91,8 @@ export default {
   line-height: $headerHeight;
   // padding-left: 20px;
   box-sizing: border-box;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 3;

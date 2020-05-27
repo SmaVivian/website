@@ -1,6 +1,6 @@
 <template>
   <!-- gis数据管理平台 -->
-  <div class="page-gis">gis数据管理平台</div>
+  <div class="g-main page-gis">gis数据管理平台</div>
 </template>
 
 <script>
